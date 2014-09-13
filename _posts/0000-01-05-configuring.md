@@ -13,7 +13,7 @@ Besides being completely driven by plug-in, Pyblish also provides options to be 
 
 ### Custom paths
 
-The most important aspect of configuration is how you expose your plugins to your pipeline. As mentioned in [[the previous tutorial|Creating-Your-First-Plugin]], paths have three levels of configuration, each with its own benefits and disadvantages.
+The most important aspect of configuration is how you expose your plugins to your pipeline. Paths have three levels of configuration, each with its own benefits and disadvantages.
 
 #### Custom paths via python
 
