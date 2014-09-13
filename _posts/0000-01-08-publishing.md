@@ -1,6 +1,57 @@
 ---
-href: making-your-first-publish
+href: publishing-with-autodesk-maya
 ---
+
+# Publishing - with Autodesk Maya
+
+> The following sections are instructions on how to get Pyblish up and running using Autodesk Maya.
+
+
+If you haven't already installed Pyblish, head on over the the [installation guide][Pyblish] to get started. Once ready, run this.
+
+```bash
+# Pyblish for Maya is a regular Python package on PyPI
+$ pip install pyblish-maya
+```
+
+> Pyblish is being tested using versions 2013, 2014 and 2015
+
+[Pyblish]: #installation
+
+### Installing the integration into Maya
+
+The next step is to expose the integration to Maya. For this, you've got two options.
+
+1. Append a `userSetup.py` to your PYTHONPATH
+
+    ```bash
+    # Typically, the integration is located here
+    c:\Python27\Lib\site-packages\pyblish_maya\pythonpath
+    ```
+
+    Append this path to your `PYTHONPATH`. See here for [help with modifying your environment][var]
+
+2. Append to your own `userSetup.py`
+
+    ```bash
+    # Typically located here:
+    C:\Users\marcus\Documents\maya\scripts\userSetup.py
+    ```
+
+     Append the following
+
+     ```python
+    import pyblish_maya.lib
+    pyblish_maya.lib.register_plugins()
+    pyblish_maya.lib.add_to_filemenu()
+    ```
+
+[var]: https://github.com/abstractfactory/pyblish/wiki/Adding-an-environment-variable
+
+### Testing things out
+
+The next time you open up Maya, look for an item in your `File` menu that reads "Publish". If you haven't got it, head over to the [Troubleshooting](#troubleshooting) section and we'll get you sorted out.
+
 
 # Making your first publish
 
