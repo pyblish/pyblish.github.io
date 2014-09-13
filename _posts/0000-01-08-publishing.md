@@ -62,11 +62,8 @@ By the end of this page, sir, *you* will have made your first publish. Just foll
 **Table of contents**
 
 - [Create something](#create-something)
-- [Publish](#publish-1st-attempt)
 - [Select it](#select-it)
-- [Publish](#publish-2nd-attempt)
 - [Make it publishable](#make-it-publishable)
-- [Publish](#publish-3rd-attempt)
 - [Dissection](#dissection)
  - [Where did the publish go?](#where-did-the-publish-go)
  - [How it works](#how-it-works)
