@@ -1,0 +1,9 @@
+# Site settings
+title: Pyblish
+email: marcus@abstractfactory.io
+description: A plug-in driven automation framework for content.
+baseurl: ""
+url: "http://pyblish.com"
+
+# Build settings
+markdown: rdiscount
