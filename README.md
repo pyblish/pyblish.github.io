@@ -1,4 +1,3 @@
-pyblish.github.io
-=================
+# Main Pyblish Website
 
 Pyblish Website
