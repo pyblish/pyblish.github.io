@@ -23,4 +23,4 @@ To test things out, let's try and import our newly installed package.
 
 > If this isn't the results you've got, head on over to [Troubleshooting](#troubleshooting) and we'll try and get things sorted.
 
-Unless it said anything except how many tests it ran, you're good to go!
+The next few sections cover some in-depth details about Pyblish, but if you'd rather get your feet wet with publishing within Autodesk Maya, head on down to [Publishing](#publishing---with-autodesk-maya) to get started!

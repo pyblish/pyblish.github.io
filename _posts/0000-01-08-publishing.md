@@ -1,5 +1,5 @@
 ---
-href: publishing-with-autodesk-maya
+href: publishing---with-autodesk-maya
 ---
 
 # Publishing - with Autodesk Maya
@@ -7,7 +7,7 @@ href: publishing-with-autodesk-maya
 > The following sections are instructions on how to get Pyblish up and running using Autodesk Maya.
 
 
-If you haven't already installed Pyblish, head on over the the [installation guide][Pyblish] to get started. Once ready, run this.
+If you haven't already installed Pyblish, head back up to the [installation guide][Pyblish] to get started. Once ready, run this.
 
 ```bash
 # Pyblish for Maya is a regular Python package on PyPI
