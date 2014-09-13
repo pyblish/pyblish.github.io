@@ -374,5 +374,5 @@ We've covered a lot of ground here but if there is one thing I'd like you to tak
 
 Pyblish is a "eat your own dog-food" library in that anything it does it does in the same manner you would do it if you were the one implementing the behaviour. We think this is important and it keeps us honest and our implementations open for learning and modification.
 
-You're probably very excited about writing your own plugins by now, so let's do that! If you've saved your work (you'll need it next), head on the the next tutorial by clicking the link below.
+You're probably very excited about writing your own plugins by now, so let's do that! If you've saved your work (you'll need it next), read on.
 
