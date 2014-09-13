@@ -6,7 +6,7 @@ href: installation
 
 # Installation
 
-The best way to learn anything is to try things out. So let's get Pyblish installed!
+The best way to learn anything is to try things out.
 
 ```bash
 # Pyblish is a regular Python package, available on PyPI

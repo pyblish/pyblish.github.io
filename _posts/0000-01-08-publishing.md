@@ -11,11 +11,11 @@ By the end of this page, sir, *you* will have made your first publish. Just foll
 **Table of contents**
 
 - [Create something](#create-something)
-- [Publish - 1st attempt](#publish-1st-attempt)
+- [Publish](#publish-1st-attempt)
 - [Select it](#select-it)
-- [Publish - 2nd attempt](#publish-2nd-attempt)
+- [Publish](#publish-2nd-attempt)
 - [Make it publishable](#make-it-publishable)
-- [Publish - 3rd attempt](#publish-3rd-attempt)
+- [Publish](#publish-3rd-attempt)
 - [Dissection](#dissection)
  - [Where did the publish go?](#where-did-the-publish-go)
  - [How it works](#how-it-works)
@@ -288,7 +288,7 @@ Don't worry, this will make more sense once we get a little bit further in learn
 
 > Because the plugin `extract_as_ma` put it there.
 
-Well, if you remember from the [**How It Works**][works], once selection and validation was complete, extraction took over. One of the extractors - specifically, one called `extract_as_ma` - is responsible for putting the files where they ended up.
+Well, if you remember from the [**How It Works**](#how-it-works), once selection and validation was complete, extraction took over. One of the extractors - specifically, one called `extract_as_ma` - is responsible for putting the files where they ended up.
 
 Remember, the primary responsibility of an extractor is *getting data out of an application*. It doesn't have much concern for exactly where the data ends up, as that is not within its responsibilities. Instead, this responsibility is delegated to conformers.
 
@@ -309,7 +309,7 @@ For example, ask yourself these questions.
 These are concerns well suited for conformers.
 
 ### Where did the naming convention come from?
-
+-
 > From the plugin `validate_naming_convention`.
 
 By now, you can probably answer the remaining questions yourself. But there is one important aspect I'd like to point out regarding the naming convention plugin.
