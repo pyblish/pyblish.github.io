@@ -6,4 +6,9 @@ baseurl: ""
 url: "http://pyblish.com"
 
 # Build settings
-markdown: rdiscount
+markdown: redcarpet
+redcarpet:
+    # Extensions from here https://github.com/vmg/redcarpet/blob/v2.2.2/README.markdown#and-its-like-really-simple-to-use
+    extensions: 
+        - 'autolink'
+        - 'with_toc_data'

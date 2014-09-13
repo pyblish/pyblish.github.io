@@ -1,4 +1,11 @@
 <header>
-    <h1>{{ site.title }}</h1>
-    <p>{{ site.description }}</p>
+    <a class="home" href="https://github.com/abstractfactory/pyblish"><img src={{ "/images/logo_macaw_extrasmall.png" }} class="logo"></a>
+
+    <nav>
+        <a href="#home">Home</a>
+        {% for post in site.posts reversed %}
+        <a href="#{{ post.href }}">{{ post.title }}</a>
+        {% endfor %}
+    </nav>
+
 </header>

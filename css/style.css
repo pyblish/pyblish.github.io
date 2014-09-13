@@ -1,10 +1,38 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
+.logo {
+  width: 64;
+}
+
+nav {
+  padding-top: 60px;
+  font-size: 1em;
+  color: rgb(141, 141, 141);
+}
+
+nav a {
+  display: block;
+}
+
 body {
-  padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+
+  /*Option 1 - GitHib*/
+  /*font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#777;*/
+  
+  /* Option 2 - Macaw */
+  font: 300 0.875em/1.58 museo-sans;
+  color: #181818;
+
   font-weight:300;
+}
+
+ul .downloads {
+  position: fixed
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,6 +49,7 @@ h1, h2, h3 {
 }
 
 h1 {
+  padding-top: 130px;
   font-size:28px;
 }
 
@@ -33,9 +62,21 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  color: rgb(141, 141, 141);
   font-weight:400;
   text-decoration:none;
+}
+
+a:hover {
+  color: rgb(0, 173, 255);
+}
+
+a.is-active {
+  color: rgb(237, 72, 119);
+}
+
+.intro {
+  color: #bbb;
 }
 
 a small {
@@ -51,6 +92,7 @@ a small {
 }
 
 blockquote {
+  color: rgb(141, 141, 141);
   border-left:1px solid #e5e5e5;
   margin:0;
   padding:0 0 0 20px;
@@ -95,10 +137,16 @@ img {
   max-width:100%;
 }
 
+section {
+  width:600px;
+  float:right;
+  padding-bottom:50px;
+}
+
 header {
-  width:270px;
-  float:left;
-  position:fixed;
+  /*width: 270px;*/
+  float: left;
+  position: fixed;
 }
 
 header ul {
@@ -157,12 +205,6 @@ header ul a strong {
   font-size:14px;
   display:block;
   color:#222;
-}
-
-section {
-  width:500px;
-  float:right;
-  padding-bottom:50px;
 }
 
 small {
