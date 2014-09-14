@@ -10,7 +10,9 @@
                 {% include home.html %}
 
                 {% for post in site.posts reversed %}
-                {{ post.content }}
+                    {% if post.draft %}{% else %}
+                        {{ post.content }}
+                    {% endif %}
                 {% endfor %}
 
                 {% include disqus.html %}
