@@ -82,6 +82,9 @@ In this YAML-formatted file you can see a rather odd looking path. This is the d
 
 - For a full view of this file, [see here][config].
 
+
+### User Configuration
+
 Ok, so you now know where paths are being configured, but it's best to avoid tampering with files within an actual library. Not only due to risk of losing your work if the library were to be reinstalled or updated.
 
 A better way is to augment this configuration with your own. This is where the `.pyblish` yaml file comes in.
