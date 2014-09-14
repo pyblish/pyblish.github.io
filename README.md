@@ -26,6 +26,17 @@ If you find an error or would otherwise like to contribute to the site, simply e
 
 Each paragraph is then sorted by their "date"; as you can see, each date is in fact starting at year zero, and month 1, day 1.
 
+### Why use GitHub for hosting?
+
+Besides being free, here are some additional benefits:
+
+- Issue tracking
+- Revision history
+- Contributor-friendly
+
+How many public websites have a common place in which issues can be reported and maintained? How many sites maintain a history of their edits? And finally, how many of them can be contributed to by anyone?
+
+That's why GitHub for hosting is the way to go.
 
 [usergroup]: https://groups.google.com/forum/#!forum/pyblish
 [wiki]: https://github.com/abstractfactory/pyblish/wiki
