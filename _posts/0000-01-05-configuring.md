@@ -38,7 +38,7 @@ To inspect which paths are currently registered, you can use this:
 ['c:\my_path']
 ```
 
-To inspect ALL paths exposed to Pyblish, including those added via PUBLISHPLUGINPATH and configuration, you can use this:
+To inspect ALL paths exposed to Pyblish, including those added via PYBLISHPLUGINPATH and configuration, you can use this:
 
 ```python
 >>> pyblish.backend.plugin.plugin_paths()
@@ -131,3 +131,5 @@ custom_environment['PYBLISHPLUGINPATH'] = "c:\spiderman_plugins"
 
 subprocess.Popen('maya', env=custom_environment)
 ```
+
+[wrapper]: https://github.com/abstractfactory/pyblish/wiki/Glossary#wrapperbootstrapper
