@@ -12,6 +12,9 @@
                 {% for post in site.posts reversed %}
                     {% if post.draft %}{% else %}
                         {{ post.content }}
+                        
+                        <div class="modified">Last modified {{ post.last_modified }}.</div>
+
                     {% endif %}
                 {% endfor %}
 
