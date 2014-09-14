@@ -2,7 +2,7 @@
 href: publishing---with-autodesk-maya
 ---
 
-# Publishing - with Autodesk Maya
+# Publishing - With Autodesk Maya
 
 > The following sections are instructions on how to get Pyblish up and running using Autodesk Maya.
 
@@ -18,7 +18,7 @@ $ pip install pyblish-maya
 
 [Pyblish]: #installation
 
-### Installing the integration into Maya
+### Installing the Integration Into Maya
 
 The next step is to expose the integration to Maya. For this, you've got two options.
 
@@ -48,12 +48,12 @@ The next step is to expose the integration to Maya. For this, you've got two opt
 
 [var]: https://github.com/abstractfactory/pyblish/wiki/Adding-an-environment-variable
 
-### Testing things out
+### Testing Things Out
 
 The next time you open up Maya, look for an item in your `File` menu that reads "Publish". If you haven't got it, head over to the [Troubleshooting](#troubleshooting) section and we'll get you sorted out.
 
 
-# Making your first publish
+# Making Your First Publish
 
 > This guide assumes you've got a freshly installed version of Maya and that you haven't changed it's project directory.
 
@@ -88,7 +88,7 @@ from maya import cmds
 cmds.polyCube(name='myCube')
 ```
 
-### Publish - 1st attempt
+### Publish
 
 Allright, let's try publishing.
 
@@ -133,7 +133,7 @@ If you didn't have `myCube` selected when you created the set, make sure to add 
 cmds.sets('myCube', addElement='MyCube')
 ```
 
-### Publish - 2nd attempt
+### Publish
 
 Allright, let's try that again.
 
@@ -196,7 +196,7 @@ cmds.setAttr('MyCube.family', 'demo.model', type='string')
 
 Now Pyblish will be able to distinguish between this set and any other set you might have.
 
-### Publish - 3rd attempt
+### Publish
 
 Third time's the charm, right?
 
@@ -252,7 +252,7 @@ From the top:
 
 Too direct? Yes, let's have a closer look at how all of this fits together.
 
-### Where did the publish go?
+### Where Did the Publish Go?
 
 > To your workspace.
 
@@ -279,13 +279,13 @@ And how did it know to produce 4 files? Why not 5, or 3?
 
 Well, the answer lies in the plugins.
 
-#### How it works
+#### How It Works
 
 If you haven't already done so, now would be an excellent time to read [How It Works](#how-it-works). It'll provide you with an overview of how Pyblish processes your publishes. Once you're ready, come back here and we'll continue.
 
 - [How It Works](#how-it-works)
 
-### 5 minutes later
+### 5 Minutes Later
 
 > Ok, so a selection plugin *selects* the cube?
 
@@ -332,7 +332,7 @@ Yes, this is a way for the instance to say "I'd like all plugins compatible with
 
 Don't worry, this will make more sense once we get a little bit further in learning about Pyblish. All you need to remember from this is that each plugin carries a list of supported families and that all instances carries exactly one (1) family that may or may not match any of the available plugins.
 
-### Why did the publish go there?
+### Why Did the Publish Go There?
 
 > Because the plugin `extract_as_ma` put it there.
 
@@ -356,7 +356,7 @@ For example, ask yourself these questions.
 
 These are concerns well suited for conformers.
 
-### Where did the naming convention come from?
+### Where Did the Naming Convention Come From?
 -
 > From the plugin `validate_naming_convention`.
 

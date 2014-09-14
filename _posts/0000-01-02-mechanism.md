@@ -4,9 +4,9 @@ href: how-it-works
 ---
 
 
-# How it works
+# How It Works
 
-Being a plug-in driven framework means that everything it does is done by plug-ins and that the surrounding library simply finds and triggers them at the opportune time. Let's have a look at how it does this.
+Being a plug-in driven framework means that everything it does is done by plug-ins and that the surrounding library merely finds and triggers them at the opportune time. Let's have a look at how it does this.
 
 Plug-ins are categorised by four distinct processes.
 
@@ -19,9 +19,7 @@ Each process runs one after another, in this exact order.
 
 ### Selection
 
-```
-The Magnet
-```
+> The Magnet
 
 Selection is the process of gathering information about the content you wish to publish. This information may be things such as the currently logged on user, the time of day and, perhaps most importantly, which part of a working file you are interested in sharing with others. You can think of it as a magnet.
 
@@ -31,9 +29,7 @@ In this case, our `Cube`, `Sphere` and `Torus` are all instances. These instance
 
 ### Validation
 
-```
-The Gatekeeper
-```
+> The Gatekeeper
 
 Validation is the step perhaps most associated with publishing. These plug-ins look at the information collected from Selection and *validates* it. A validation may be something like:
 
@@ -45,9 +41,7 @@ Validators are the gatekeepers of content.
 
 ### Extraction
 
-```
-The Rock Carver
-```
+> The Rock Carver
 
 Once finished, the context will be passed on to Extraction. Extraction has one responsbility - get whatever has been collected during Selection and *extract* it from your application, typically onto disk. You can think of *this* as rock carving; persisting temporal data onto disk.
 
@@ -57,13 +51,11 @@ Once our `Sphere` resides on disk, it is time for the final step of publishing.
 
 ### Conform
 
-```
-The Transporter
-```
+> The Transporter
 
 Conform is the process of integrating the extracted content into the rest of your pipeline. This includes placing the files where you typically store this kind of data, spheres in this case, and possibly register the event with a central database, such as an online task tracking solution. This step is synonymous to shipping or transportation.
 
-## How integrations work
+## How Integrations Work
 
 Now that we know a little bit about the process and how plug-ins work, let's talk about the integrations.
 
