@@ -5,6 +5,9 @@ description: A plug-in driven automation framework for content.
 baseurl: ""
 url: "http://pyblish.com"
 
+# Enable Disqus
+comments: true
+
 # Build settings
 markdown: redcarpet
 redcarpet:
