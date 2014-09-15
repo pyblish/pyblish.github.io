@@ -9,11 +9,10 @@
             <section>
                 {% include home.html %}
 
-                {% for chapter in site.chapters reversed %}
+                {% for chapter in site.chapters %}
                     {{ chapter.content }}
                 {% endfor %}
 
-                {% include disqus.html %}
             </section>
         </div>
     </body>
