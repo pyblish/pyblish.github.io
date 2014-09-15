@@ -3,10 +3,10 @@
 
     <nav>
         <a href="#home">Home</a>
-        {% for post in site.posts reversed %}
-        	<!-- Don't post drafts -->
-        	{% if post.draft %}{% else %}
-        		<a href="#{{ post.href }}">{{ post.title }}</a>
+        {% for chapter in site.chapters reversed %}
+        	<!-- Don't chapter drafts -->
+        	{% if chapter.draft %}{% else %}
+        		<a href="#{{ chapter.href }}">{{ chapter.title }}</a>
         	{% endif %}
         {% endfor %}
         <a href="#discuss">Discuss</a>

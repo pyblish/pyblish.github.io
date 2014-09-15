@@ -3,8 +3,8 @@
 
     <nav>
         <a href="#home">Home</a>
-        {% for post in site.posts reversed %}
-        	<a href="#{{ post.href }}">{{ post.title }}</a>
+        {% for chapter in site.chapters reversed %}
+        	<a href="#{{ chapter.href }}">{{ chapter.title }}</a>
         {% endfor %}
         <a href="#discuss">Discuss</a>
     </nav>
