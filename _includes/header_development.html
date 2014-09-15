@@ -1,0 +1,12 @@
+<header>
+    <a class="home" href="https://github.com/abstractfactory/pyblish"><img src={{ "/images/logo_macaw_extrasmall.png" }} class="logo"></a>
+
+    <nav>
+        <a href="#home">Home</a>
+        {% for post in site.posts reversed %}
+        	<a href="#{{ post.href }}">{{ post.title }}</a>
+        {% endfor %}
+        <a href="#discuss">Discuss</a>
+    </nav>
+
+</header>
