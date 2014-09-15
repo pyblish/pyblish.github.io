@@ -9,7 +9,7 @@
             <section>
                 {% include home.html %}
 
-                {% for chapter in site.chapters %}
+                {% for chapter in site.chapters sort_by:'order' %}
                     {{ chapter.content }}
                 {% endfor %}
 
