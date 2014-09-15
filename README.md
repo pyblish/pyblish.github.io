@@ -38,6 +38,14 @@ How many public websites have a common place in which issues can be reported and
 
 That's why GitHub for hosting is the way to go.
 
+### Why a single page?
+
+You mean instead of having smaller pages per chapter? With a single page, it is clear where you are, how much progress you've made and how far you have left to go.
+
+With smaller pages, you can never be sure of your progress or how far you have left to go; a tutorial could be endless for all you know.
+
+A single page keeps us honest and you informed and we'll know instantly if the documentation ever grows too large.
+
 [usergroup]: https://groups.google.com/forum/#!forum/pyblish
 [wiki]: https://github.com/abstractfactory/pyblish/wiki
 [repo]: https://github.com/abstractfactory/pyblish
