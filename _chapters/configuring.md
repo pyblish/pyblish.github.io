@@ -1,5 +1,6 @@
 ---
 href: configuring-pyblish
+order: 5.1.1
 ---
 
 # Configuring Pyblish

@@ -9,10 +9,8 @@
             <section>
                 {% include home.html %}
 
-                {% for post in site.tests reversed %}
-                    {% if post.draft %}{% else %}
-                        {{ post.content }}
-                    {% endif %}
+                {% for chapter in site.chapters reversed %}
+                    {{ chapter.content }}
                 {% endfor %}
 
                 {% include disqus.html %}
