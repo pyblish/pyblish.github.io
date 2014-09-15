@@ -9,11 +9,11 @@
             <section>
                 {% include home.html %}
 
-                {% for post in site.posts reversed %}
-                    {% if post.draft %}{% else %}
-                        {{ post.content }}
+                {% for chapter in site.chapters reversed %}
+                    {% if chapter.draft %}{% else %}
+                        {{ chapter.content }}
                         
-                        <!-- <div class="modified">Last modified {{ post.last_modified }}.</div> -->
+                        <!-- <div class="modified">Last modified {{ chapter.last_modified }}.</div> -->
 
                     {% endif %}
                 {% endfor %}
