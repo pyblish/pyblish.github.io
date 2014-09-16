@@ -2,6 +2,7 @@
 title: Pyblish
 email: marcus@abstractfactory.io
 description: A plug-in driven automation framework for content.
+version: "1.0.1"
 baseurl: ""
 url: "http://pyblish.com"
 
