@@ -9,7 +9,7 @@
             <section>
                 {% include home.html %}
 
-                {% for chapter in site.chapters reversed %}
+                {% for chapter in site.chapters %}
                     {% if chapter.draft %}{% else %}
                         {{ chapter.content }}
                         
