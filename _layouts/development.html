@@ -5,11 +5,11 @@
 
     <body>
         <div class="wrapper">
-            {% include header.html %}
+            {% include header_development.html %}
             <section>
                 {% include home.html %}
 
-                {% for chapter in site.chapters sort_by:'order' %}
+                {% for chapter in site.chapters %}
                     {{ chapter.content }}
                 {% endfor %}
 

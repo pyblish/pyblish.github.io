@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body>
+        <div class="wrapper">
+            {% include header.html %}
+            <section>
+                <div class="breadcrums"> <a href={{ site.url }}>Home</a> > {{ page.title }} </div>
+                {{ content }}
+                {% include disqus.html %}
+            </section>
+        </div>
+    </body>
+
+</html>

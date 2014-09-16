@@ -11,6 +11,11 @@ div .modified {
   float: right;
 }
 
+.breadcrums {
+  font-size: 0.8em;
+  color: rgb(150, 150, 150);
+}
+
 nav {
   padding-top: 60px;
   font-size: 1em;
