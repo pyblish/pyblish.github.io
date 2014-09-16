@@ -1,9 +1,9 @@
 <header>
-    <a class="home" href="https://github.com/abstractfactory/pyblish"><img src={{ "/images/logo_macaw_extrasmall.png" }} class="logo"></a>
+    <a class="home" href="http://pyblish.com"><img src={{ "/images/logo_macaw_extrasmall.png" }} class="logo"></a>
 
     <nav>
         <a href="#home">Home</a>
-        {% for chapter in site.chapters reversed %}
+        {% for chapter in site.chapters %}
         	<a href="#{{ chapter.href }}">{{ chapter.title }}</a>
         {% endfor %}
         <a href="#discuss">Discuss</a>
