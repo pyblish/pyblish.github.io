@@ -1,11 +1,29 @@
 <!DOCTYPE html>
+<head>
+    <title>Pyblish | Plug-in driven automation framework for content</title>
+</head>
 <html>
 
     {% include head.html %}
 
     <body>
         <div class="wrapper">
-            {% include header.html %}
+            <header>
+                <a class="home" href="/"><img src="/images/logo_macaw_extrasmall.png" class="logo"></a>
+
+                <nav>
+                    <a href="#home">Home</a>
+                    {% for chapter in site.chapters %}
+                        <!-- Don't include drafts -->
+                        {% if chapter.draft %}{% else %}
+                            <a href="#{{ chapter.href }}">{{ chapter.title }}</a>
+                        {% endif %}
+                    {% endfor %}
+                    <a href="#discuss">Discuss</a>
+                </nav>
+
+            </header>
+
             <section>
                 {% include home.html %}
 

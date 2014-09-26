@@ -4,7 +4,7 @@
     <nav>
         <a href="#home">Home</a>
         {% for chapter in site.chapters %}
-        	<!-- Don't chapter drafts -->
+        	<!-- Don't include drafts -->
         	{% if chapter.draft %}{% else %}
         		<a href="#{{ chapter.href }}">{{ chapter.title }}</a>
         	{% endif %}

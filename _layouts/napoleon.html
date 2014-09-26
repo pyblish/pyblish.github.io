@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Napoleon | Asset Framework for Content</title>
+</head>
+<html>
+    {% include head.html %}
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <a class="home" href="/napoleon"><img src="/images/napoleon-logo-64.png" class="logo"></a>
+
+                <nav>
+                    <a href="#home">Home</a>
+                    {% for chapter in site.napoleon %}
+                        <a href="#{{ chapter.href }}">{{ chapter.title }}</a>
+                    {% endfor %}
+                    <!-- <a href="#discuss">Discuss</a> -->
+                </nav>
+
+            </header>
+
+            <section>
+                <!-- {% include home.html %} -->
+                {% for chapter in site.napoleon %}
+                    {{ chapter.content }}
+                {% endfor %}
+
+            </section>
+        </div>
+    </body>
+
+</html>
