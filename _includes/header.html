@@ -2,7 +2,6 @@
     <a class="home" href="/"><img src="/images/logo_macaw_extrasmall.png" class="logo"></a>
 
     <nav>
-        <a href="#home">Home</a>
         {% for chapter in site.chapters %}
         	<!-- Don't include drafts -->
         	{% if chapter.draft %}{% else %}

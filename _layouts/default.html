@@ -1,44 +1,34 @@
 <!DOCTYPE html>
-<head>
-    <title>Pyblish | Plug-in driven automation framework for content</title>
-</head>
 <html>
 
+  <head>
+    <title>Pyblish | Plug-in driven automation framework for content</title>
     {% include head.html %}
+  </head>
 
-    <body>
-        <div class="wrapper">
-            <header>
-                <a class="home" href="/"><img src="/images/pyblish-logo-64.png" class="logo"></a>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a class="home" href="/"><img src="/images/pyblish-logo-64.png" class="logo"></a>
 
-                <nav>
-                    <a href="#home">Home</a>
-                    {% for chapter in site.chapters %}
-                        <!-- Don't include drafts -->
-                        {% if chapter.draft %}{% else %}
-                            <a href="#{{ chapter.href }}">{{ chapter.title }}</a>
-                        {% endif %}
-                    {% endfor %}
-                    <a href="#discuss">Discuss</a>
-                </nav>
+        <nav>
+          <a href="/">Home</a>
+          <a href="http://learn.pyblish.com">Learn</a>
+          <a href="http://api.pyblish.com">API</a>
+          <a href="http://forums.pyblish.com">Forums</a>
+          <a href="https://gitter.im/pyblish/pyblish">Chat</a>
+        </nav>
 
-            </header>
+      </header>
 
-            <section>
-                {% include home.html %}
-
-                {% for chapter in site.chapters %}
-                    {% if chapter.draft %}{% else %}
-                        {{ chapter.content }}
-                        
-                        <!-- <div class="modified">Last modified {{ chapter.last_modified }}.</div> -->
-
-                    {% endif %}
-                {% endfor %}
-
-                {% include disqus.html %}
-            </section>
-        </div>
-    </body>
+      <section>
+        {% for chapter in site.chapters %}
+          {% if chapter.draft %}{% else %}
+            {{ chapter.content }}
+          {% endif %}
+        {% endfor %}
+      </section>
+    </div>
+  </body>
 
 </html>
