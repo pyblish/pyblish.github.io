@@ -10,7 +10,7 @@ This repository hosts the website located at http://pyblish.com and consists of 
 
 ### Contributing
 
-If you find an error or would otherwise like to contribute to the site, edit the one file located within the `_posts` directory.
+If you find an error or would otherwise like to contribute to the site, edit the one Markdown formatted file located within the `_chapters` directory.
 
 [Jekyll]: http://jekyllrb.com
 [Liquid]: http://liquidmarkup.org/
