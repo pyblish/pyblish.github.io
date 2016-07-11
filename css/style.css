@@ -76,10 +76,6 @@ a.is-active {
   color: rgb(237, 72, 119);
 }
 
-.intro {
-  color: #bbb;
-}
-
 a small {
   font-size:11px;
   color:#777;
@@ -140,12 +136,12 @@ img {
 
 section {
   width: 600px;
+  padding-top: 130px;
   float: right;
   padding-bottom: 50px;
 }
 
 header {
-  /*width: 270px;*/
   float: left;
   position: fixed;
 }
@@ -240,7 +236,6 @@ footer {
   }
   
   header {
-    padding-right: 320px;
   }
   
   section {
@@ -255,7 +250,13 @@ footer {
   }
 
   nav {
-    display: none;
+    display: -webkit-flex;
+    display: flex;
+    padding-top: 15px;
+  }
+  
+  nav a {
+    margin-right: 10px;
   }
 }
 
@@ -277,23 +278,11 @@ footer {
     word-wrap:normal;
   }
 
-  nav {
-    display: none;
-  }
-
 }
 
 @media print, screen and (max-width: 480px) {
   body {
     padding:15px;
-  }
-  
-  header ul {
-    display:none;
-  }
-
-  nav {
-    display: none;
   }
 }
 
